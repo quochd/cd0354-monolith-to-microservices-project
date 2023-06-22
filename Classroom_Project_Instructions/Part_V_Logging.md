@@ -22,6 +22,7 @@ Try one or more of these to take your project to the next level.
 
 --- 
 
+
 # Submission Requirements
 The project will be submitted as a link to a GitHub repo or a zip file and should include screenshots to document the application's infrastructure.
 

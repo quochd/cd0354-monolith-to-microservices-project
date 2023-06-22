@@ -85,4 +85,4 @@ Note that this is only for the troubleshooting purposes, such as verifying the d
   # Use "docker-compose -f docker-compose-build.yaml push" if the names in the compose file are as same as the Dockerhub repositories. 
   ```
 
-
+--test
