@@ -13,7 +13,12 @@ jobs:
       - run:
           name: Build Docker images
           command: |
-            docker-compose -f docker-compose-build.yaml build --parallel
+            # docker-compose -f docker-compose-build.yaml build --parallel
+
+            docker-compose -f docker-compose-build.yaml build udagram-api-feed
+            docker-compose -f docker-compose-build.yaml build udagram-api-user
+            docker-compose -f docker-compose-build.yaml build reverseproxy
+            docker-compose -f docker-compose-build.yaml build udagram-frontend
       - run:
           name: Tag Docker images
           command: |
