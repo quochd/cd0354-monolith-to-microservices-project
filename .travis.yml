@@ -16,11 +16,11 @@ script:
   - docker tag udagram-api-feed produc/udagram-api-feed:v1
   - docker tag udagram-api-user produc/udagram-api-user:v1
   - docker tag reverseproxy produc/reverseproxy:v1
-  - docker tag udagram-frontend produc/udagram-frontend:v2
+  - docker tag udagram-frontend produc/udagram-frontend:v1
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push produc/udagram-api-feed:v1
   - docker push produc/udagram-api-user:v1
   - docker push produc/reverseproxy:v1
-  - docker push produc/udagram-frontend:v2
+  - docker push produc/udagram-frontend:v1
