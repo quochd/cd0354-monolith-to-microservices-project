@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: env-configmap
 data:
-  POSTGRES_HOST: db-salt.cdtbjf0imbsf.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: nhatnm.c5e6x2d99ppx.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
   AWS_BUCKET: myudacity-610844210820-dev
   AWS_REGION: us-east-1

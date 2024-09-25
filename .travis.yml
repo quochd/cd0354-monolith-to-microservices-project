@@ -13,14 +13,14 @@ before_script:
 
 script:
   - docker-compose -f docker-compose-build.yaml build --parallel
-  - docker tag udagram-api-feed saltfpt/udagram-api-feed:v1
-  - docker tag udagram-api-user saltfpt/udagram-api-user:v1
-  - docker tag reverseproxy saltfpt/reverseproxy:v1
-  - docker tag udagram-frontend saltfpt/udagram-frontend:v2
+  - docker tag udagram-api-feed produc/udagram-api-feed:v1
+  - docker tag udagram-api-user produc/udagram-api-user:v1
+  - docker tag reverseproxy produc/reverseproxy:v1
+  - docker tag udagram-frontend produc/udagram-frontend:v2
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push saltfpt/udagram-api-feed:v1
-  - docker push saltfpt/udagram-api-user:v1
-  - docker push saltfpt/reverseproxy:v1
-  - docker push saltfpt/udagram-frontend:v2
+  - docker push produc/udagram-api-feed:v1
+  - docker push produc/udagram-api-user:v1
+  - docker push produc/reverseproxy:v1
+  - docker push produc/udagram-frontend:v2

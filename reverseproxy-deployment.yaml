@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: reverseproxy
-          image: saltfpt/reverseproxy:v1
+          image: produc/reverseproxy:v1
           ports:
             - containerPort: 8080
