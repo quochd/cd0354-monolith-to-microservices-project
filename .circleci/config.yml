@@ -37,7 +37,7 @@ jobs:
           name: Push Docker images to Docker Hub
           command: |
             echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-            # docker push $DOCKER_USERNAME/udagram-api-feed:v1
+            docker push $DOCKER_USERNAME/udagram-api-feed:v1
             docker push $DOCKER_USERNAME/udagram-api-user:v1
             docker push $DOCKER_USERNAME/reverseproxy:v1
             docker push $DOCKER_USERNAME/udagram-frontend:v1
