@@ -3,10 +3,10 @@ kind: ConfigMap
 metadata:
   name: env-configmap
 data:
-  POSTGRES_HOST: nhatnm.c5e6x2d99ppx.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: giangdb.cuhqrkgwu2tf.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
   AWS_BUCKET: myudacity-610844210820-dev
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testing
-  URL: http://aba06b0f124b4419fba6f9058551ca51-1829423399.us-east-1.elb.amazonaws.com:8100
+  URL: http://a61dc03a4646b450dbc2145a6d47b0f7-318594989.us-east-1.elb.amazonaws.com:8100

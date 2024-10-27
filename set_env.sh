@@ -2,8 +2,8 @@
 # DO NOT STORE YOUR CREDENTIALS INTO GIT
 export POSTGRES_USERNAME=postgres
 export POSTGRES_PASSWORD=postgres
-export POSTGRES_HOST=nhatnm.c5e6x2d99ppx.us-east-1.rds.amazonaws.com
-export POSTGRES_DB=nhatdbnew
+export POSTGRES_HOST=giangdb.cuhqrkgwu2tf.us-east-1.rds.amazonaws.com
+export POSTGRES_DB=postgres
 export AWS_BUCKET=myudacity-610844210820-dev
 export AWS_REGION=us-east-1
 export AWS_PROFILE=default
